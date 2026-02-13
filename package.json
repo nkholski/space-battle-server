@@ -1,0 +1,23 @@
+{
+  "name": "godot-webrtc-signaling",
+  "version": "1.0.0",
+  "description": "Simple WebSocket Signaling Server for Godot WebRTC",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "godot",
+    "webrtc",
+    "signaling",
+    "websocket"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.13.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
