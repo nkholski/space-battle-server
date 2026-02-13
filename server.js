@@ -61,7 +61,8 @@ wss.on('connection', (ws) => {
 
 function sendTo(targetId, msg) {
     wss.clients.forEach((client) => {
-        if (client.readyState === WebSocket.OPEN && client.id === targetId) {
+        // IDs might be number or string, use loose equality or conversion
+        if (client.readyState === WebSocket.OPEN && client.id == targetId) {
             client.send(JSON.stringify(msg));
         }
     });
